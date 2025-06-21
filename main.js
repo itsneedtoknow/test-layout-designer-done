@@ -1,5 +1,6 @@
 import './normalize.css'
 import './assets/components.css'
+import './assets/test-styles.css'
 import './assets/components'
 import './style.css'
 import './scripts'
