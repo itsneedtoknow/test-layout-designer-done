@@ -2,15 +2,14 @@ h2, h3, h4, h5{
     color: #303030;
 }
 h2{
-    font-size: 22px;
+    font-size: 26px;
 }
 h3{
-    font-size: 20px;
+    font-size: 22px;
 }
 h4{
-    font-size: 16px;
+    font-size: 20px;
 }
-
 img{
     object-fit: cover;
 }
@@ -18,8 +17,9 @@ img{
 .cards .container-wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 32px;
-    max-width: 1520px;
+    max-width: 1830px;
     margin: 0 auto;
     padding: 32px 16px;
     background-color: rgb(234, 232, 232);
@@ -28,11 +28,12 @@ img{
     background-color: inherit;
     width: calc(50% - 16px);
     min-width: 420px;
-    font-size: 18px;
     color: grey;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 20px;
+    border-radius: 16px;
+    gap: 16px;
+    height: 540px;
 }
 .card:hover{
     box-shadow: 3px 3px 15px rgb(187, 187, 187);
@@ -43,37 +44,29 @@ img{
 .card-text{
     display: flex;
 }
-.card{
-    gap: 24px;
-}
-.card-text,
 .author{
     gap: 16px;
 }
 .card-text{
     flex-direction: column;
-    justify-content: center;
-}
-.card-img,
-.card-text{
-    flex: 1 1 50%;
+    justify-content: space-around;
+    font-size: 18px;
+    flex: 1 1 43%;
 }
 .card-img{
-    max-width: calc(50% - 8px);
+    width: 53%;
+    flex: 1 1 53%;
     height: 100%;
     box-shadow: 3px 3px 15px rgb(187, 187, 187);
-    border-radius: 20px;
+    border-radius: 16px;
 }
 
-.author{
-    img{
-        width: 50px;
-        height: 50px;
+.author img{
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         overflow: hidden;
     }
-    
-}
 .author h3,
 .card-text h4,
 .card-text h2{
@@ -90,7 +83,8 @@ img{
 @media(max-width: 992px){
     .card{
         width: 100%;
-        height: 400px;
+        min-height: 400px;
+        height: auto;
     }
 }
 @media(max-width: 600px){
@@ -101,10 +95,11 @@ img{
     }
     .card-img, .card-text{
         flex-basis: 100%;
+        width: 100%;
         max-width: unset;
     }
     .card-img{
-        max-height: 350px;
+        max-height: 250px;
         height: 100%;
     }
     .card-text{

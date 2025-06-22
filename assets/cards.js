@@ -35,8 +35,9 @@ let cardsContainer=document.querySelector('.cards .container-wrapper');
 createCard(cardsData);
 
 function createCard(dataJSON){
+  cardsContainer.innerHTML = "";
     dataJSON.forEach(dataElement => {
-        
+      
       let card = createElement( 'card','div', 'card')
      
         if(dataElement.image){
@@ -64,7 +65,6 @@ function createCard(dataJSON){
         authorInfo.appendChild(authorPhoto);
         authorInfo.appendChild(authorText);
         cardsContainer.appendChild(card);
-        return cardsContainer;
     });
 }
 function createElement(elementName,tagName, ...className){
