@@ -9,3 +9,8 @@
 ```html
 <div>Test</div>
 ```
+Верстка реализована при помощи js+css 
+Файл с функцией создания карточек - assets > cards.js
+Файл со стилями - assets > cards-styles.css
+
+В режимах npm run dev и npm run preview все отображается с картинками

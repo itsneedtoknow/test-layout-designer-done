@@ -5,3 +5,5 @@
 
 Дополнительно оформить валидацию - сделав обводку - red color:
 **.form-select-chosen\_\_input.error-class**
+
+Оформление компонента находится в папке assest файл form-styles.css
