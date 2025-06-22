@@ -17,9 +17,6 @@
   z-index: 3;
 }
 
-.form-select-chosen__output {
-}
-
 .form-select-chosen__output:empty::before {
   content: attr(data-placeholder);
   color: #898989;
@@ -55,7 +52,4 @@
   max-height: 400px;
   list-style-type: none;
   overflow: auto;
-}
-
-.form-select-chosen__option {
 }
